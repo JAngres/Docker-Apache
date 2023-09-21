@@ -1,0 +1,6 @@
+# Machinell erzeugte Datei - Verwenden Sie "minicom -s" zum Ändern
+pu port             /dev/ttyUSB0
+pu baudrate         9600
+pu bits             8
+pu parity           N
+pu stopbits         1
