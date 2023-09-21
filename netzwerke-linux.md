@@ -39,6 +39,7 @@
 Kopieren Sie die bereitgestellte Textdatei _minirc.cisco_ in den Ordner _/etc/minicom/_. Hierfür werden ggf. **root**-Rechte benötigt.
 
 #### Verbindungsaufbau
+* Den _Console_ Port mit RJ45 Anschluss am Router / Switch mit einem USB Port am Computer verbinden. Verwenden Sie hierzu ein hellblaues Rollover-Kabel.
 * Terminal öffnen
 * zum **root** Benutzer wechseln
 * serielle Verbindung zum Cisco Gerät aufbauen. Hierfür wird die vorbereitete Konfigurationsdatei _minirc.cisco_ verwendet.
