@@ -1,5 +1,5 @@
 ## Netzwerktechnik mit Linux (Ubuntu 22 LTS)
-### Befehlsübersicht
+### Befehlsübersicht Terminal
 |Aufgabe | Befehl |
 |---|---|
 |IP Konfiguration anzeigen| ```:~$ ip address```
