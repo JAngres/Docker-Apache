@@ -47,3 +47,6 @@ Kopieren Sie die bereitgestellte Textdatei _minirc.cisco_ in den Ordner _/etc/mi
 :~$ sudo -s 
 :~# minicom cisco
 ```
+
+### Copyright 
+**Julius Angres under CC BY-NC-SA**
