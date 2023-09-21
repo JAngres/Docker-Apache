@@ -14,12 +14,12 @@
 || ```:~$ nano```
 |Texteditor (GUI) öffnen| ```:~$ gedit```
 
-### IP Konfiguration
+### Anleitung: IP Konfiguration
 #### Statische IPv4 Adresse einrichten
-* Über die Einstellungen
+* Weg 1: Über die Einstellungen
   * Auf _Aktivitäten_ oben links klicken oder _Windows Taste_ drücken
   * Im Suchfeld _Einstellungen_ eingeben und App **Einstellungen** anklicken
-* Über die Taskleiste
+* Weg 2: Über die Taskleiste
   * Auf Taskleiste oben rechts klicken
   * _Kabelgebunden verbunden_ wählen
   * _LAN Einstellungen_ wählen
@@ -29,7 +29,20 @@
 * Unter **Adressen** die IP Adresse, die Netzmaske und ggf. den Gateway eintragen
 * Gegebenenfalls unter **DNS** die IP Adresse des DNS Servers eintragen.
   * bei mehreren DNS Servern Adressen mit Komma trennen.
-  * die erste Adresse ist dann der primäre DNS Server
+  * die erste Adresse ist dann der primäre DNS Server.
 * Oben rechts auf den Button _Anwenden_ klicken
 * Im Fenster der Netzwerkeinstellungen unter **Kabelgebunden** den Schieberegler aus- und danach wieder anschalten.
 * **Die IPv4 Adresse ist nun eingerichtet** 
+
+### Anleitung: Zugriff auf Cisco Router / Switch
+#### Vorbereitung
+Kopieren Sie die bereitgestellte Textdatei _minirc.cisco_ in den Ordner _/etc/minicom/_. Hierfür werden ggf. **root**-Rechte benötigt.
+
+#### Verbindungsaufbau
+* Terminal öffnen
+* zum **root** Benutzer wechseln
+* serielle Verbindung zum Cisco Gerät aufbauen. Hierfür wird die vorbereitete Konfigurationsdatei _minirc.cisco_ verwendet.
+```
+:~$ sudo -s 
+:~# minicom cisco
+```
