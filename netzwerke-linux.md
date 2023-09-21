@@ -6,11 +6,13 @@
 |DNS Server anzeigen| ```:~$ resolvectl status```
 |Erreichbarkeit eines Hosts prüfen| ```:~$ ping 127.0.0.1```
 ||```:~$ ping www.cisco.com```
+|Routenverfolgung zu einem Host| ```:~$ traceroute 192.168.0.1```
+|| ```:~$ traceroute dns.google```
 |Verbindung zu Cisco Router/Switch (**als root**)| ```:~$ sudo -s``` 
 || ```:~# minicom cisco```
 |Texteditor (CLI) öffnen| ```:~$ vim```
 || ```:~$ nano```
-|Texteditor (GUI) öffnen| ```:~$ gedit &```
+|Texteditor (GUI) öffnen| ```:~$ gedit```
 
 ### IP Konfiguration
 #### Statische IPv4 Adresse einrichten
