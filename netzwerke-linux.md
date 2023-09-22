@@ -49,4 +49,4 @@ Kopieren Sie die bereitgestellte Textdatei _minirc.cisco_ in den Ordner _/etc/mi
 ```
 
 ### Copyright 
-**Julius Angres under CC BY-NC-SA**
+**Julius Angres** under **CC BY-NC-SA**
