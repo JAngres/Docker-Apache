@@ -3,6 +3,7 @@
 |Aufgabe | Befehl |
 |---|---|
 |IP Konfiguration anzeigen| ```:~$ ip address```
+|Default Gateway anzeigen| ```:~$ ip route```
 |DNS Server anzeigen| ```:~$ resolvectl status```
 |Erreichbarkeit eines Hosts prüfen| ```:~$ ping 127.0.0.1```
 ||```:~$ ping www.cisco.com```
@@ -10,9 +11,9 @@
 || ```:~$ traceroute dns.google```
 |Verbindung zu Cisco Router/Switch (**als root**)| ```:~$ sudo -s``` 
 || ```:~# minicom cisco```
-|Texteditor (CLI) öffnen| ```:~$ vim```
-|| ```:~$ nano```
-|Texteditor (GUI) öffnen| ```:~$ gedit```
+|Texteditor (CLI) öffnen mit _datei.txt_| ```:~$ vim datei.txt```
+|| ```:~$ nano datei.txt```
+|Texteditor (GUI) öffnen mit _datei.txt_| ```:~$ gedit datei.txt```
 
 ### Anleitung: IP Konfiguration
 #### Statische IPv4 Adresse einrichten
