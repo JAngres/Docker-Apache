@@ -16,7 +16,7 @@
 |Texteditor (GUI) öffnen mit _datei.txt_| ```:~$ gedit datei.txt```
 
 ### Anleitung: IP Konfiguration
-#### Statische IPv4 Adresse einrichten
+#### Statische IPv4 Adresse einrichten (GNOME 3)
 * Weg 1: Über die Einstellungen
   * Auf _Aktivitäten_ oben links klicken oder _Windows Taste_ drücken
   * Im Suchfeld _Einstellungen_ eingeben und App **Einstellungen** anklicken
@@ -30,10 +30,26 @@
 * Unter **Adressen** die IP Adresse, die Netzmaske und ggf. den Gateway eintragen
 * Gegebenenfalls unter **DNS** die IP Adresse des DNS Servers eintragen.
   * bei mehreren DNS Servern Adressen mit Komma trennen.
-  * die erste Adresse ist dann der primäre DNS Server.
+  * die erste Adresse ist dann der primäre DNS Server
 * Oben rechts auf den Button _Anwenden_ klicken
 * Im Fenster der Netzwerkeinstellungen unter **Kabelgebunden** den Schieberegler aus- und danach wieder anschalten.
 * **Die IPv4 Adresse ist nun eingerichtet** 
+
+#### Statische IPv4 Adresse einrichten (GNOME Flashback)
+* In der Taskleiste oben auf das Netzwerkicon (zwei Pfeile klicken)
+* In der Liste _Verbindungen bearbeiten ..._ auswählen
+* Im Fenster der Netzwerkeinstellungen unter **Kabelgebunden** auf das Zahnrad-Icon klicken
+* Tab _IPv4_ wählen
+* Bei **IPv4-Methode** im Dropdown-Menü _Manuell_ wählen
+* Unter **Adressen** die IP Adresse, die Netzmaske (CIDR-Notation) und ggf. den Gateway eintragen
+* Gegebenenfalls unter **DNS** die IP Adresse des DNS Servers eintragen.
+  * bei mehreren DNS Servern Adressen mit Komma trennen.
+  * die erste Adresse ist dann der primäre DNS Server
+* Unten rechts auf den Button _Speichern_ klicken
+* In der Taskleiste oben wieder auf das Netzwerkicon (zwei Pfeile klicken)
+* In der Liste _Kabelgebundene Verbindung 1_ auswählen, um die neue Adresskonfiguration anzuziehen
+* **Die IPv4 Adresse ist nun eingerichtet**
+
 
 ### Anleitung: Zugriff auf Cisco Router / Switch
 #### Vorbereitung
@@ -48,6 +64,23 @@ Kopieren Sie die bereitgestellte Textdatei _minirc.cisco_ in den Ordner _/etc/mi
 :~$ sudo -s 
 :~# minicom cisco
 ```
+
+#### Information: Konfigurationsdatei _minirc.cisco_
+```
+# Machinell erzeugte Datei - Verwenden Sie "minicom -s" zum Ändern
+pu port             /dev/ttyUSB0
+pu baudrate         9600
+pu bits             8
+pu parity           N
+pu stopbits         1
+```
+Sollte eine Verbindung nicht möglich sein, kann der tatsächliche Port nach dem Anschließen des Rollover-Kabels wie folgt in Erfahrung gebracht werden:
+```
+:~$ dmesg | tail
+```
+Aus den Informationen im Log entnimmt man den Port. Anschließend kann die Konfigurationsdatei über _minicom -s_ (als **root**) angepasst werden.
+
+
 
 ### Copyright 
 **Julius Angres** under **CC BY-NC-SA**
