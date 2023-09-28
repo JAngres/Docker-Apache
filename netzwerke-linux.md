@@ -9,6 +9,9 @@
 ||```:~$ ping www.cisco.com```
 |Routenverfolgung zu einem Host| ```:~$ traceroute 192.168.0.1```
 || ```:~$ traceroute dns.google```
+|DNS Informationen zu einer Domain| ```:~$ nslookup www.cisco.com```
+||```:~$ dig cisco.com```
+|Informationen zum Besitzer einer Domain| ```:~$ whois cisco.com```
 |Verbindung zu Cisco Router/Switch (**als root**)| ```:~$ sudo -s``` 
 || ```:~# minicom cisco```
 |Texteditor (CLI) öffnen mit _datei.txt_| ```:~$ vim datei.txt```
