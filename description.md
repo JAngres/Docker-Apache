@@ -48,8 +48,9 @@ Eine geplante Erweiterung ist das Bereitstellen des Containers über [Azure][azu
    * _OpenCart packaged by Bitnami_
    * **AB_6: Webshop Deployment mit Azure**
 7) Website des **Gf Store**
-   * Website entwickeln
    * Konzept Continuous Integration / Continuous Delivery
+   * Docker Container vs. Virtuelle Maschine
+   * Website entwickeln
    * **AB_7: Azure CI/CD**
 8) _Optional_: Entwicklung eines Chatbots für die Website von **Gf Store**. 
 
