@@ -1,6 +1,23 @@
 <html>
+<script>
+function askcred() {
+    let username = prompt("Enter username:")
+    let password = prompt("Enter password:")
+    if (username == "anr" && password == "anr4tw") {
+        alert("Sucessful login. Welcome " + username)
+    } else {
+        alert("Incorrect user name or password!")
+    }
+}
+</script>
 <body>
     <h1> ANR4TW </h1>
     <h3> Version 1.1 Windows Edition </h3>
+    <section>
+        <form onsubmit="askcred()">
+        <input type="submit" name="chk_cred">
+        </form>
+    </section>
+    
 </body>
 </html>
