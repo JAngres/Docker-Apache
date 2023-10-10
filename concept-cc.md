@@ -32,16 +32,21 @@
    * _optional_: Azure Active Directory 
    Synchronisation
    * **AB_5a: Azure AD Integration**
-6) Webshop anlegen
+7) Webshop anlegen
    * Funktionalitäten eines Webshops
    * _OpenCart packaged by Bitnami_
    * **AB_6: Webshop Deployment mit Azure**
-7) Website des **Gf Store**
+8) Website des **Gf Store**
    * Konzept Continuous Integration / Continuous Delivery
    * Docker Container vs. Virtuelle Maschine
    * Website entwickeln
    * **AB_7: Azure CI/CD**
-8) _Optional_: Entwicklung eines Chatbots für die Website von **Gf Store**. 
+   * Anlegen einer SQL Datenbank. Verknüpfung mit einer Web App.
+   * **AB_8: Azure SQL Datenbank**
+   
+9) _Optional_: 
+   * Entwicklung eines Chatbots für die Website von **Gf Store**. 
+    
 
 [az-preisrechner]: https://azure.microsoft.com/de-de/pricing/calculator/
 [az-portal]: https://portal.azure.com
