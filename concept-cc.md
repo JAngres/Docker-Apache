@@ -24,25 +24,28 @@
 5) Virtuelle Maschinen als Ressource anlegen
    * Exkurs: _JSON_
    * Template für eine VM anlegen
-   * **AB_4: Azure VM erstellen, Azure CLI verwenden, JSON**
+   * **AB_4: Azure VM erstellen**
+   * **AB_5: Azure CLI verwenden, JSON**
 6) Migration **Gf Store**
    * Domänencontroller anlegen und konfigurieren
    * Backup DC erstellen (ohne GUI)
-   * **AB_5: Domäne in Azure erstellen**
+   * **AB_6: Domäne in Azure erstellen**
    * _optional_: Azure Active Directory 
    Synchronisation
-   * **AB_5a: Azure AD Integration**
+   * **AB_6a: Azure AD Integration**
 7) Webshop anlegen
    * Funktionalitäten eines Webshops
    * _OpenCart packaged by Bitnami_
-   * **AB_6: Webshop Deployment mit Azure**
+   * **AB_7: Webshop Deployment mit Azure**
 8) Website des **Gf Store**
    * Konzept Continuous Integration / Continuous Delivery
    * Docker Container vs. Virtuelle Maschine
    * Website entwickeln
-   * **AB_7: Azure CI/CD**
+   * **AB_8: Azure CI/CD**
+   * Bereitstellen eines Tauschordners
+   * **AB_9: Azure File Share**
    * Anlegen einer SQL Datenbank. Verknüpfung mit einer Web App.
-   * **AB_8: Azure SQL Datenbank**
+   * **AB_10: Azure SQL Datenbank**
    
 9) _Optional_: 
    * Entwicklung eines Chatbots für die Website von **Gf Store**. 
