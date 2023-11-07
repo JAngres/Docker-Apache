@@ -5,6 +5,7 @@
 |IP Konfiguration anzeigen| ```:~$ ip address```
 |Default Gateway anzeigen| ```:~$ ip route```
 |DNS Server anzeigen| ```:~$ resolvectl```
+|IP-/DNS-Konfiguration (alternativ)| ```:~$ nmcli```
 |Erreichbarkeit eines Hosts prüfen| ```:~$ ping 127.0.0.1```
 ||```:~$ ping www.cisco.com```
 |Routenverfolgung zu einem Host| ```:~$ traceroute 192.168.0.1```
