@@ -55,6 +55,21 @@
 * **Die IPv4 Adresse ist nun eingerichtet**
 
 
+### Anleitung: Auslesen der DHCP Client Konfiguration
+#### Lease Informationen anzeigen
+Die Lease Informationen befinden sich in der Datei _/var/lib/dhcp/dhclient.leases_. Wenn die Datei nicht existiert, z.B. weil die Netzwerkkonfiguration von Network Manager durchgeführt wird, kann sie wie folgt angelegt werden. Ersetzen Sie den Interface-Namen durch denjenigen auf Ihrem System.
+``` 
+:~$ /usr/sbin/dhclient -v enp0s3
+```
+Wenn sich der Pfad _/usr/sbin_ bereits in der Pfadvariablen _$PATH_ befindet, kann der Präfix _/usr/sbin_ weggelassen werden.
+<br/>
+
+Anschließend können die Lease Informationen abgefragt werden:
+```
+:~$ cat /var/lib/dhcp/dhclient.leases
+```
+
+
 ### Anleitung: Zugriff auf Cisco Router / Switch
 #### Vorbereitung
 Kopieren Sie die bereitgestellte Textdatei _minirc.cisco_ in den Ordner _/etc/minicom/_. Hierfür werden ggf. **root**-Rechte benötigt.
