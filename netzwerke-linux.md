@@ -55,6 +55,40 @@
 * **Die IPv4 Adresse ist nun eingerichtet**
 
 
+#### Statische IPv4 Adresse einrichten (Terminal [CLI])
+In this example the configured network interface is named _enp0s3_. The default gateway and DNS server (relay) is 192.168.0.1 and the netmask is /24 which is equivalent to 255.255.255.0 in dot decimal notation.
+* set ip address using built-in tool ip
+```
+sudo ip address add 192.168.0.10/24 dev enp0s3
+```
+
+* remove existing IP address from interface, if any
+```
+sudo ip address del a.b.c.d/m dev enp0s3 
+```
+
+* delete default gateway
+```
+sudo ip route delete default 
+```
+
+* add default gateway
+```
+sudo ip route add default via 192.168.0.1 dev enp0s3
+```
+
+* temporarily change DNS server in file /etc/resolv.conf. Append line
+_nameserver 192.168.0.1_ or without using an editior: 
+```
+sudo echo nameserver 192.168.0.1 >> /etc/resolv.conf
+```
+
+* switch (back) to DHCP if required
+```
+sudo dhclient -v enp0s3
+```
+
+
 ### Anleitung: Auslesen der DHCP Client Konfiguration
 #### Lease Informationen anzeigen
 Die Lease Informationen befinden sich in der Datei _/var/lib/dhcp/dhclient.leases_. Wenn die Datei nicht existiert, z.B. weil die Netzwerkkonfiguration von Network Manager durchgeführt wird, kann sie wie folgt angelegt werden. Ersetzen Sie den Interface-Namen durch denjenigen auf Ihrem System.
